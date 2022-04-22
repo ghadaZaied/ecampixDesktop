@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" fx:id="mainComponent" minHeight="-Infinity" prefHeight="60.0"
+            prefWidth="418.0"
+            AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" xmlns="http://javafx.com/javafx/8.0.171"
+            fx:controller="com.ecampix.gui.front.TopBarController">
+    <HBox layoutX="16.0" prefHeight="30.0" spacing="15.0" stylesheets="@../../utils/MainStyle.css"
+          AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="16.0" AnchorPane.topAnchor="15.0">
+        <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Ecampix" wrappingWidth="150">
+            <font>
+                <Font name="System Bold" size="26.0"/>
+            </font>
+        </Text>
+        <Button fx:id="btnLivraisons" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308"
+                mnemonicParsing="false" onAction="#afficherLivraisons" text="Livraisons" textFill="WHITE">
+            <HBox.margin>
+                <Insets/>
+            </HBox.margin>
+            <font>
+                <Font name="Segoe UI Bold" size="15.0"/>
+            </font>
+            <cursor>
+                <Cursor fx:constant="HAND"/>
+            </cursor>
+        </Button>
+        <Button fx:id="btnLivreurs" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308"
+                mnemonicParsing="false" onAction="#afficherLivreurs" text="Livreurs" textFill="WHITE">
+            <HBox.margin>
+                <Insets/>
+            </HBox.margin>
+            <font>
+                <Font name="Segoe UI Bold" size="15.0"/>
+            </font>
+            <cursor>
+                <Cursor fx:constant="HAND"/>
+            </cursor>
+        </Button>
+        <Button fx:id="btnReclamations" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308"
+                mnemonicParsing="false" onAction="#afficherReclamations" text="Reclamations" textFill="WHITE">
+            <HBox.margin>
+                <Insets/>
+            </HBox.margin>
+            <font>
+                <Font name="Segoe UI Bold" size="15.0"/>
+            </font>
+            <cursor>
+                <Cursor fx:constant="HAND"/>
+            </cursor>
+        </Button>
+        <Button fx:id="btnReponses" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308"
+                mnemonicParsing="false" onAction="#afficherReponses" text="Reponses" textFill="WHITE">
+            <HBox.margin>
+                <Insets/>
+            </HBox.margin>
+            <font>
+                <Font name="Segoe UI Bold" size="15.0"/>
+            </font>
+            <cursor>
+                <Cursor fx:constant="HAND"/>
+            </cursor>
+        </Button>
+
+    </HBox>
+    <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false"
+            style="-fx-background-color: red;"
+            onAction="#logout" text="Logout" textFill="WHITE" AnchorPane.bottomAnchor="15.0"
+            AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="15.0">
+        <font>
+            <Font name="Segoe UI Bold" size="15.0"/>
+        </font>
+        <cursor>
+            <Cursor fx:constant="HAND"/>
+        </cursor>
+    </Button>
+</AnchorPane>
